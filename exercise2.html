@@ -3,7 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--   <link rel="stylesheet" href="css/reset.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="css/public.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Exercise 2</title>
 </head>
@@ -11,26 +14,28 @@
   <header class="page-header">
     <div class="header-top clearfix">
       <div class="container">
-        <section class="header-top-left">
-          <div class="header-top-logo">
-            <a href="#"><img src="images/logo.png" alt="img-logo" class="img-logo"></a>
+        <div class="top-logo clearfix">
+          <div class="img-logo">
+            <a href="#"><img src="images/logo.png" alt="img-logo"></a>
           </div>
-          <div class="header-top-info">
-            <h1>Specialized Clinic</h1>
+          <div class="h-top-info">
+            <b>Specialized Clinic</b>
             <p>Physiotherapy - Rehabilitation</p>
           </div>
-        </section>
-        <section class="header-top-right">
-          <img src="images/icon-tele.png" alt="icon-telephone" class="header-img-tele">
-          <i>Question for the doctor? </i>
-          <span class="phone-number txt-blue">05113941 977</span>
-        </section>
+        </div>
+        <div class="header-top-right clearfix">
+          <img src="images/ic-tele.png" alt="icon-phone" class="ic-tele">
+          <p class="t-r-info">
+            <i>Question for the doctor? </i>
+            <span class="phone-number txt-blue">05113941 977</span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="header-bottom clearfix">
       <div class="container">
         <nav class="header-menu">
-          <ul class="header-menu-list">
+          <ul class="header-menu-list clearfix">
             <li class="header-menu-item"><a href="" class="menu-link">Home</a></li>
             <li class="header-menu-item"><a href="" class="menu-link">About Us</a></li>
             <li class="header-menu-item"><a href="" class="menu-link txt-blue">Health Services</a></li>
@@ -40,9 +45,9 @@
           </ul>
         </nav>
         <ul class="header-social-list">
-          <li class="header-social-item"><img src="images/icon-fb.png" alt="icon facebook"></li>
-          <li class="header-social-item"><img src="images/icon-gmail.png" alt="icon gmail"></li>
-          <li class="header-social-item"><img src="images/icon-youtube.png" alt="icon youtube"></li>
+          <li class="header-social-item"><a href=""><img src="images/icon-fb.png" alt="icon facebook"></a></li>
+          <li class="header-social-item"><a href=""><img src="images/icon-gmail.png" alt="icon gmail"></a></li>
+          <li class="header-social-item"><a href=""><img src="images/icon-youtube.png" alt="icon youtube"></a></li>
         </ul>
       </div>
     </div>
@@ -50,9 +55,8 @@
   <main class="page-main">
     <section class="section-breadcrumb">
       <div class="container">
-        <ul class="breadcrumb-list">
+        <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="#" class="menu-link">Home</a></li>
-          <li class="breadcrumb-item">/</li>
           <li class="breadcrumb-item">Health Services</li>
         </ul>
       </div>
@@ -63,151 +67,191 @@
           <section class="sidebar-left-menu">
             <ul class="menu-list">
               <li class="menu-item">
-                <h3 class="menu-item-title">Adults<span class="minus">-</span></h3>
-                <ul class="adults-list">
-                  <li class="adults-item"><a href="" class="menu-link">Neck-shouler-hand pain</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Spinal pain</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Disc herniation</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Knee joint, hip joint</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Footsore,</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Diseases of the muscles</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Perlpheral neuropathy</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Sequelae of stroke</a></li>
-                  <li class="adults-item"><a href="" class="menu-link">Traumatic sequelae</a></li>
-                </ul>
+                <div class="dropdown clearfix">
+                  <h3 class="menu-item-title">Adults</h3>
+                  <button class="minus"><i class="fa fa-minus"></i></button>
+                </div>
+                <div class="dropdown-content">
+                  <ul class="category-list">
+                    <li class="category-item"><a href="" class="menu-link">Neck-shouler-hand pain</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Spinal pain</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Disc herniation</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Knee joint, hip joint</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Footsore,</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Diseases of the muscles</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Perlpheral neuropathy</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Sequelae of stroke</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Traumatic sequelae</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="sidebar-left-item">
-                <h3 class="menu-item-title">Children<span class="plus">+</span></h3>
-                <ul class="children-list">
-                  <li class="children-item"><a href="" class="menu-link">Neck-shouler-hand pain</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Spinal pain</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Disc herniation</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Knee joint, hip joint</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Footsore,</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Diseases of the muscles</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Perlpheral neuropathy</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Sequelae of stroke</a></li>
-                  <li class="children-item"><a href="" class="menu-link">Traumatic sequelae</a></li>
-                </ul>
+                <div class="dropdown clearfix">
+                  <h3 class="menu-item-title">Children</h3>
+                  <button class="minus"><i class="fa fa-minus"></i></button>
+                </div>
+                <div class="dropdown-content">
+                  <ul class="category-list">
+                    <li class="category-item"><a href="" class="menu-link">Neck-shouler-hand pain</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Spinal pain</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Disc herniation</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Knee joint, hip joint</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Footsore,</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Diseases of the muscles</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Perlpheral neuropathy</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Sequelae of stroke</a></li>
+                    <li class="category-item"><a href="" class="menu-link">Traumatic sequelae</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </section>
           <section class="sidebar-left-form">
-            <h2 class="sidebar-left-form-title">Book Schedule</h2>
-            <span class="blue-line"></span>
+            <h2 class="sb-form-title">Book Schedule</h2>
+            <i class="blue-line"></i>
             <form class="form-book-schedule" action="">
-              <input class="input-left-sidebar" type="text" placeholder="Full Name">
-              <input class="input-left-sidebar" type="text" placeholder="Addess">
-              <input class="input-left-sidebar" type="text" placeholder="Phone Number">
-              <input class="input-left-sidebar" type="date" placeholder="Time">
-              <input class="btn-send" type="submit" value="Send">
+              <div class="input-control">
+                <input class="input-control-item" type="text" placeholder="Full Name">
+              </div>
+              <div class="input-control">
+                <input class="input-control-item" type="text" placeholder="Addess">
+              </div>
+              <div class="input-control">
+                <input class="input-control-item" type="text" placeholder="Phone Number">
+              </div>
+              <div class="input-control"> 
+                <input class="input-control-item" type="date" placeholder="Time">
+              </div>
+              <div class="input-control btn-send">
+                <input id="btn-send" type="submit" value="Send">
+              </div>
             </form>
           </section>
         </aside>
         <section class="main-right">
-          <ul class="service-list">
+          <ul class="service-list clearfix">
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img1.png" alt="image 1" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
+              <div class="service-content">
+                <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+              </div>
+              <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
             </li>
             <li class="service-item">
-              <a href="" class="menu-link"><img src="images/img2.png" alt="image 2" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href=""><span class="ic-more"></span></a>
+                <a href="" class="menu-link"><img src="images/img2.png" alt="image 2" class="service-image"></a>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
             </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img3.png" alt="image 3" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href=""><span class="ic-more"></span></a>
+              <div class="service-content">
+                <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+              </div>
+              <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
             </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img4.png" alt="image 4" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
-            </li>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
+              </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img5.png" alt="image 5" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Slow Say</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
-            </li>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Slow Say</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
+              </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img6.png" alt="image 6" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Slow Say</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
-            </li>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Slow Say</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
+              </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img7.png" alt="image 7" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Slow Say</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
-            </li>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Slow Say</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
+              </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img8.png" alt="image 8" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
-            </li>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
+              </li>
             <li class="service-item">
               <a href="" class="menu-link"><img src="images/img9.png" alt="image 9" class="service-image"></a>
-              <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
-              <a href="" class="menu-link"><span class="ic-more"></span></a>
-            </li>
+                <div class="service-content">
+                  <h3 class="service-item-title"><a href="#" class="menu-link">Neck Shoulder Pain</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores porro tempora natus dolorum libero saepe?</p>
+                </div>
+                <a href="" id="btn-more" class="menu-link fas fa-arrow-right"></a>
+              </li>
           </ul>
         </section>
       </div>
     </div>
   </main>
-  <footer class="page-footer">
-   <section class="footer-info">
-     <div class="container">
-       <ul class="info-list">
-         <li class="info-item">
-           <h3 class="info-item-title">About Us</h3>
-           <ul class="sub-info-list">
-             <li class="sub-info-item"><a href="" class="menu-link">General Introduction</a></li>
-             <li class="sub-info-item"><a href="" class="menu-link">Human</a></li>
-             <li class="sub-info-item"><a href="" class="menu-link">Facilities And Facilities</a></li>
-           </ul>
-         </li>
-         <li class="info-item">
-           <h3 class="info-item-title">Support</h3>
-           <ul class="sub-info-list">
-             <li class="sub-info-item"><a href="" class="menu-link">Health Counseling</a></li>
-             <li class="sub-info-item"><a href="" class="menu-link">Regular Medicine</a></li>
-             <li class="sub-info-item"><a href="" class="menu-link">Schedule Appointments</a></li>
-           </ul>
-         </li>
-         <li class="info-item">
-           <h3 class="info-item-title">Social Connection</h3>
-           <ul class="sub-info-list">
-             <li class="sub-info-item">
-               <a href="" class="menu-link"><span class="footer-facebook-img">Facebook</span></a>
-             </li>
-             <li class="sub-info-item">
-               <a href="" class="menu-link"><span class="footer-google-img">Google+</span></a>
-             </li>
-             <li class="sub-info-item">
-               <a href="" class="menu-link"><span class="footer-youtube-img">Youtube</span></a>
-             </li>
-           </ul>
-         </li>
-       </ul>
-     </div>
-   </section>
-   <div class="footer-bottom">
-     <div class="container">
-       <span class="footer-copyright">&copy; 2018 &#45; Copyright Of Specialized Clinic</span>
-       <span class="footer-author">Design By DD.Com</span>
-     </div>
-   </div>
- </footer>
+  <footer class="page-footer txt-white">
+    <section class="footer-info">
+      <div class="container">
+        <ul class="info-list clearfix">
+          <li class="info-item">
+            <h3 class="info-item-title">About Us</h3>
+            <ul class="sub-info-list">
+              <li class="sub-info-item"><a href="" class="footer-link">General Introduction</a></li>
+              <li class="sub-info-item"><a href="" class="footer-link">Human</a></li>
+              <li class="sub-info-item"><a href="" class="footer-link">Facilities And Facilities</a></li>
+            </ul>
+          </li>
+          <li class="info-item">
+            <h3 class="info-item-title">Support</h3>
+            <ul class="sub-info-list">
+              <li class="sub-info-item"><a href="" class="footer-link">Health Counseling</a></li>
+              <li class="sub-info-item"><a href="" class="footer-link">Regular Medicine</a></li>
+              <li class="sub-info-item"><a href="" class="footer-link">Schedule Appointments</a></li>
+            </ul>
+          </li>
+          <li class="info-item">
+            <h3 class="info-item-title">Social Connection</h3>
+            <ul class="sub-info-list">
+              <li class="sub-info-item">
+                <a href="" class="footer-link"><span class="footer-facebook-img">Facebook</span></a>
+              </li>
+              <li class="sub-info-item">
+                <a href="" class="footer-link"><span class="footer-google-img">Google+</span></a>
+              </li>
+              <li class="sub-info-item">
+                <a href="" class="footer-link"><span class="footer-youtube-img">Youtube</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-address">
+          <span class="footer-copyright">&copy; 2018 &#45; Copyright Of Specialized Clinic</span>
+          <span class="footer-author">Design By DD.Com</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

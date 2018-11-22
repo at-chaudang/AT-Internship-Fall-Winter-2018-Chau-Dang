@@ -1,0 +1,53 @@
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  height: 500px;
+  padding: 1em;
+  position: relative;
+  border: 1px solid black;
+}
+.cl {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid black;
+  position: absolute;
+}
+.class2 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.class3 {
+  right: 1em;
+}
+.class4 {
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+}
+.class5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.class6 {
+  top: 50%;
+  right: 1em;
+  transform: translate(0,-50%);
+}
+.class7 {
+  bottom: 1em;
+  left: 1em;
+}
+.class8 {
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.class9 {
+  bottom: 1em;
+  right: 1em;
+}

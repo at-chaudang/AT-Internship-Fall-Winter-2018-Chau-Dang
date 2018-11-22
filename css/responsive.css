@@ -20,6 +20,12 @@
   .page-main {
     font-size: 90%;
   }
+  .service-item {
+    width: calc(100% / 2 - 1em);
+  }
+  .service-item:last-child {
+    display: none;
+  }
 }
 @media only screen and (max-width: 479px) {
   body {
@@ -32,11 +38,13 @@
     width: 100%;
   }
   .service-item {
-    width: calc(100% / 2 - 1em);
+    width: calc(100% - 1em);
+  }
+  .header-top-right {
+    display: none;
   }
   .service-item:last-child {
-    width: calc(100% - 1em);
-    font-size: 120%;
+    display: none;
   }
   .sidebar-left {
     display: none;

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JavaScript Exercise</title>
+  <link rel="stylesheet" href="">
+  <script src="js/js-exercise.js"></script>
+</head>
+<style>
+  b {
+    padding-left: 1em;
+  }
+</style>
+<body style="padding: 1em; padding-left: 2em;">
+  <h1>HTML + Javascript Exercise</h1>
+  <div class="Knowledge">
+    <h2>Knowledge</h2>
+    <pre style="font-size: 115%;">
+      <b>- What are the differences between a variable that is: `null`, `undefined`?</b>
+      "null" is a object !!! "undefined" is not object.
+
+      <b>- What is `use strict`? what are the advantages and disadvantages to using it?</b>
+      This statement indicates that the code should be executed in “strict mode”. It is only declared at the beginning of a function/script.Strict mode will help save developers from errors they didn’t even know that existed in their code.
+      <!--  "use strict" là chế độ "nghiêm ngặt". Giúp DEV tránh những lỗi không biết trước. -->
+      <em>Advantages:</em>
+      i) It will catch common coding errors, which will throw exceptions.
+      ii) When vulnerable actions are performed, it throws errors.
+      iii) It will show,let us know and disable the features that are poorly coded.
+      <em>Disadvantages:</em>
+      i) It will not allow us to use the “with” statement. This statement will causes security and performance problems.
+      ii) It will not allow us to use the “arguments.caller” property, due to security concernsWe do not have an alternate to this property, but we can hard code an additional parameter.
+
+      <b>- What are the differences between `==` and `===`? Write an example for each case (if any)?</b>
+      == là so sánh values.
+      === là so sánh values và so sánh kiểu.
+      Example:
+      1 == '1' return true;
+      1 === '1' return false;
+
+      <b>- What is different between declaration: `var`, `const` and `let`?</b>
+      var là kiểu biến toàn cục, ở đâu cũng xài được... và ghi đè được.
+      const là kiểu hằng số, ở đâu cũng xài được... và không ghi đè được.
+      let là kiểu biến cục bộ, ở nhà thì xài được... và ghi đè được.
+
+      <b>- What are values in the `FALSE` grourp.</b>
+      0
+      ""
+      null
+      undefined
+      false
+    </pre>
+  </div>
+  <div class="Playground">
+    <h2>Playground</h2>
+    <div class="exercise1">
+      <h3>Exercise 1</h3>
+      <h4>Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.</h4>
+      <pre style="color: orange;">
+        ```
+        Input: a = 5, b = 10
+        Output: 15
+
+        Input: a = 5, b = 5
+        Output: 30
+        ```
+      </pre>
+      <input id="ex1_a" type="text" placeholder="Enter a" oninput="rs_ex1()">
+      <input id="ex1_b" type="text" placeholder="Enter b" oninput="rs_ex1()">
+      <b>Result: </b><b id="ex1_rs"></b>
+    </div>
+    <div class="exercise2">
+      <h3>Exercise 2</h3>
+      <h4>Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.</h4>
+      <pre style="color: orange;">
+        ```
+        Input: a = 12
+        Output: 7
+
+        Input: a = 19
+        Output: 0
+
+        Input: a = 22
+        Output: 9
+        ```
+      </pre>
+      <input id="ex2_a" type="text" placeholder="Enter a" oninput="rs_ex2()">
+      <b>Result: </b><b id="ex2_rs"></b>
+    </div>
+    <div class="exercise3">
+      <h3>Exercise 3</h3>
+      <h4>A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3.</h4>
+      <pre style="color: orange;">
+        ```
+        Input: a = '1*9'
+        Output: ['129', '159', '189']
+        ```
+
+        ```
+        Input: a = '1234567890*'
+        Output: ['12345678900', 
+        '12345678903', 
+        '12345678906', 
+        '12345678909']
+        ```
+      </pre>
+      <input id="ex3_a" type="text" placeholder="Enter a" oninput="rs_ex3()">
+      <b>Result: </b><b id="ex3_rs"></b>
+    </div>
+    <div class="exercise4">
+      <h3>Exercise 4</h3>
+      <h4>A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.</h4>
+      <pre style="color: orange;">
+       ```
+       Input: a = '1*9'
+       Output: []
+       ```
+
+       ```
+       Input: a = '1234567890*'
+       Output: ['12345678900', 
+       '12345678906']
+       ```
+     </pre>
+     <input id="ex4_a" type="text" placeholder="Enter a" oninput="rs_ex4()">
+     <b>Result: </b><b id="ex4_rs"></b>
+   </div>
+ </div>
+</body>
+</html>

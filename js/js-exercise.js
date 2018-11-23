@@ -1,18 +1,18 @@
-function Ex1(a,b){
-  if(a==b) return a*6;
-  return +a+(+b);
+function Ex1(a = 0, b = 0){
+  if (a == b) return a*6;
+  return +a + (+b);
 }
-function Ex2(a){
-  if(a>19) return (a-19)*3;
-  return 19-a;
+function Ex2(a = 0){
+  if (a > 19) return (a - 19) * 3;
+  return 19 - a;
 }
-function Ex3(a,num){
-  let temp,result=[];
+function Ex3(a = 0, num = 1){
+  let temp,result = [];
   for (var j = 0; j <= 9; j++) {
     temp = a.replace('*',j);
     if(!(+temp%num)) {
       result.push(temp);
-      j+=num-1;
+      j += num - 1;
     }
   }
   return result;

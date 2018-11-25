@@ -26,6 +26,7 @@ function Ex3(a = 0, num = 1) {
       validate++;
     }
   }
+  if (validate) return 'Please check only one (*) again.';
   for (i = 0; i < 10; i += jump) {
     if ((sum + i) % 3 === 0) {
       result.push(a.replace('*', i));

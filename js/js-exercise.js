@@ -18,17 +18,16 @@ function Ex3(a = 0, num = 1) {
   let validate = -1;
   let result_item;
   let i;
-  if (!a) return result;
+  if(!a) return result;
   for (i = 0; i < a.length; i++) {
     if (a[i] !== '*') {
-      sum += Number(a);
+      sum += Number(a[i]);
     } else {
       validate++;
     }
   }
-  if (validate) return 'Please check only one (*) again.';
   for (i = 0; i < 10; i += jump) {
-    if (!((sum + i) % 3)) {
+    if ((sum + i) % 3 === 0) {
       result.push(a.replace('*', i));
       jump = 3;
     }

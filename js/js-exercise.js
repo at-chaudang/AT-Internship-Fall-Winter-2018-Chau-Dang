@@ -1,5 +1,5 @@
 function Ex1(a = 0, b = 0) {
-  if (a == b) return a * 6;
+  if (a === b) return a * 6;
   return +a + (+b);
 }
 function Ex2(a = 0) {
@@ -19,12 +19,12 @@ function Ex3(a = 0, num = 1) {
     }
   }
   for (i = 0; i < 10; i += jump) {
-    if ((sum + i) % 3 == 0) {
+    if (!((sum + i) % 3)) {
       result.push(a.replace('*', i));
       jump = 3;
     }
   }
-  if (num == 6) {
+  if (num === 6) {
     for (i = 0; i < result.length; i++) {
       result_item = result[i];
       if (result_item.charAt(result_item.length - 1) % 2) {

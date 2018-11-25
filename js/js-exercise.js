@@ -1,23 +1,32 @@
 function Ex1(a = 0, b = 0) {
-  if (a === b) return a * 6;
-  return +a + (+b);
+  let a_tmp = Number(a);
+  let b_tmp = Number(b);
+  if (isNaN(a_tmp) || isNaN(b_tmp)) {
+    return 'Im sorry. Please check number again.';
+  }
+  return (a_tmp === b_tmp) ? a_tmp * 6 : a_tmp + b_tmp;
 }
 function Ex2(a = 0) {
-  if (a > 19) return (a - 19) * 3;
-  return 19 - a;
+  let a_tmp = Number(a);
+  if (isNaN(a_tmp)) return 'Im sorry. Please check number again.';
+  return (a_tmp > 19) ? (a_tmp - 19) * 3 : 19 - a_tmp;
 }
 function Ex3(a = 0, num = 1) {
   let result = [];
-  let temp = '';
-  let jump = 1,sum = 0;
+  let jump = 1;
+  let sum = 0;
+  let validate = -1;
   let result_item;
   let i;
   if (!a) return result;
   for (i = 0; i < a.length; i++) {
     if (a[i] !== '*') {
-      sum += +a[i];
+      sum += Number(a);
+    } else {
+      validate++;
     }
   }
+  if (validate) return 'Please check only one (*) again.';
   for (i = 0; i < 10; i += jump) {
     if (!((sum + i) % 3)) {
       result.push(a.replace('*', i));

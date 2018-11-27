@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart-style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container clearfix">
+      <div class="logo">
+        <a href="index.html"><img id="logo-img" src="images/logo.jpg" alt="logo img"></a>
+      </div>
+      <div class="contact">
+        <ul class="menu">
+          <li class="menu-item text-link"><a href="index.html">Home</a></li>
+          <li class="menu-item text-link"><a href="cart.html">Cart</a></li>
+        </ul>
+        <a href="cart.html"><img id="cart-img" src="images/cart-img.png" alt="cart img"></a>
+        <span id="total-items">0</span>      
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="breakcrum">
+      <div class="container">
+        <ul class="clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <table class="cart-table">
+        <thead>
+          <tr class="title-table">
+            <th style="width: 40%;">product</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody id="listCart">
+
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+  </main>
+  <footer class="page-footer container clearfix">
+    <div class="date-design">2018-11-26</div>
+    <div class="author">Design by Dvc</div>
+  </footer>
+  <script src="js/database.js"></script>
+  <script src="js/js-cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.page-header > div {
+  position: relative;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #bcbcbc24;
+}
+
+.text-link:hover {
+  background: #62c6f8;
+}
+
+.logo {
+  float: left;
+}
+
+.contact {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu {
+  padding-right: 2em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.menu-item {
+  padding: 1em;
+
+  display: inline-block;
+}
+
+.contact ul li {
+
+}
+
+#logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+#cart-img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.page-main {
+  margin-top: 100px;
+}
+
+.breakcrum {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1em;
+}
+
+.breakcrum li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.breakcrum li + li:before {
+  content: '/\00a0';
+}
+
+.products {
+  text-align: center;
+}
+
+.products h3 {
+  padding: 0.5em;
+  background: #bcbc;
+}
+
+.products p {
+  padding: 0.5em;
+}
+
+.products button {
+  padding: 0.5em;
+  width: 60%;
+  text-transform: uppercase;
+  background: #62c6f8;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+}
+
+.products-item {
+  float: left;
+  width: calc(100% / 3);
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+/*footer page*/
+.page-footer {
+  margin-top: 2em;
+  border-top: 1px solid black;
+  padding: 1em 0;
+}
+
+.date-design {
+  float: left;
+}
+
+.author {
+  float: right;
+  color: orange;
+}

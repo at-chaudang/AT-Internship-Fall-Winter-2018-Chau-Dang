@@ -1,0 +1,79 @@
+.cart-table {
+  width: 100%;
+}
+
+.title-table th {
+  padding: 0.5em;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-top: 0;
+  background: #ccc;
+}
+
+#total {
+  color: red;
+}
+
+.ic-remove {
+  width: 50px;
+  height: 50px;
+}
+
+th:not(:first-child) {
+  width: 20%;
+}
+
+#listCart tr:last-child {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+#listCart td:not(:first-child) {
+  text-align: center;
+  position: relative;
+}
+
+#listCart td {
+  border: 1px solid black;
+}
+
+#listCart td span, .ic-remove {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.product-td {
+  position: relative;
+}
+
+.float-right {
+  text-align: center;
+  width: calc(100% - 100px);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.float-right h3 {
+  padding: 0.5em;
+  background: #bcbc;
+}
+
+.float-right p {
+  padding: 0.5em;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+}
+
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}

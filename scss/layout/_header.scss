@@ -1,83 +1,68 @@
 .header-top {
   width: 100%;
   padding: $m 0 $s;
-}
-
-/*TOP LEFT*/
-.top-logo {
-  float: left;
-}
-.img-logo {
-  float: left;
-  padding: $m;
-}
-.h-top-info {
-  float: right;
-  padding: 1.5 * $m 0 0;
-  b {
-    display: block;
-    font-size: 1.5 * $m;
-    font-weight: 600;
-    padding-bottom: $s;
+  /*TOP LEFT*/
+  .top-logo {
+    .img-logo {
+      @extend %pull-left;
+      padding: $m;
+    }
+    .h-top-info {
+      @extend %pull-right;
+      padding: 1.5 * $m 0 0;
+    }
+    .top-info-title {
+      display: block;
+      font-size: 1.5 * $m;
+      font-weight: 600;
+      padding-bottom: $s;
+    }
   }
-}
-
-/*TOP-RIGHT*/
-.header-top-right {
-  float: right;
-  padding: $l;
-}
-.ic-tele {
-  display: block;
-  float: left;
-}
-.t-r-info {
-  float: right;
-  line-height: $l;
-  &:before {
-    content: $space;
-  }
-}
-
-.header-bottom {
-  border-bottom: 1px solid $border-nav-color;
-  border-top: 1px solid $border-nav-color;
-}
-.header-menu {
-  float: left;
-}
-.header-social-list {
-  float: right;
-}
-.header-menu-item {
-  float: left;
-  padding: 0 $m;
-  border-right: 1px solid $border-nav-color;
-  &:last-child {
-    border-right: 0;
-  }
-  a {
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.65 * $m;
-    line-height: 30 * $xxs;
-    &:hover {
-      color: $primary-color;
+  .header-top-right {
+    padding: $l;
+    .ic-tele {
+      display: block;
+      @extend %pull-left;
+    }
+    .t-r-info {
+      @extend %pull-right;
+      line-height: $l;
+      &:before {
+        content: $space;
+      }
     }
   }
 }
 
-.header-social {
-  float: right;
-}
-.header-social-list {
-  padding: $m 0;
-}
-.header-social-item {
-  float: left;
-  padding: 0 $xs;
-  > a {
-    text-align: center;
+/*TOP-RIGHT*/
+.header-bottom {
+  border-bottom: 1px solid $color-border-nav;
+  border-top: 1px solid $color-border-nav;
+  .header-menu {
+    .header-menu-item {
+      @extend %pull-left;
+      padding: 0 $m;
+      border-right: 1px solid $color-border-nav;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    .menu-link {
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 0.65 * $m;
+      line-height: 30 * $xxs;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  .header-social-list {
+    padding: $m 0;
+    .header-social-item {
+      @extend %pull-left;
+      padding: 0 $xs;
+    }
   }
 }

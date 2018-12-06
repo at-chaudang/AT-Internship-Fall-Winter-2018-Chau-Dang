@@ -1,47 +1,38 @@
-/*page-main*/
+// === page-main ===
 .page-main {
   padding-bottom: $l;
 }
 
-.main-content {
-  padding: $xl 0 0;
-}
-
-/*Main-content*/
-.main-right {
-  @extend %pull-right;
-  width: 75%;
-}
-
-.service-item {
-  @extend %pull-left;
-  width: calc(100% / 3 - #{$m});
-  padding-bottom: $m;
-  position: relative;
-  box-shadow: 1px 1px 1px $grey-color;
-  margin-left: $m;
-  margin-bottom: $m;
-}
-
-.category-item:before {
-  content: $big-dot;
-  color: $grey-color;
-  padding-right: $s; 
-}
-
-.service-image {
-  width: 100%;
-  height: 90 * $xxs;
-}
-
-.service-content {
-  padding: 4%;
-  padding-bottom: 8%;
-  h3 {
-    padding-bottom: 4%;
-  }
-  p {
-    font-size: 6 * $xxs;
-    line-height: 130%;
+.homepage {
+  .main-content {
+    padding: $xl 0 0;
+    .main-right {
+      @extend %pull-right;
+      width: 75%;
+    }
+    .service-item {
+      @extend %pull-left;
+      width: calc(100% / 3 - #{$m});
+      padding-bottom: $m;
+      position: relative;
+      box-shadow: 1px 1px 1px $color-grey;
+      margin-left: $m;
+      margin-bottom: $m;
+      &-title {
+        padding-bottom: 4%;
+      }
+      &-container {
+        padding: 4%;
+        padding-bottom: 8%;
+      }
+      &-content {
+        font-size: 6 * $xxs;
+        line-height: 130%;
+      }
+      .service-image {
+        width: 100%;
+        height: 90 * $xxs;
+      }
+    }
   }
 }

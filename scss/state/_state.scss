@@ -1,7 +1,11 @@
-.txt-footer {
-  color: $footer-text-color;
+.txt-white {
+  color: $color-white;
 }
 
 .txt-primary {
-  color: $primary-color;
+  color: $color-primary;
+}
+
+.txt-center {
+  @extend %txt-center;
 }

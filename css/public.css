@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+button {
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+h1 {
+  font-size: 1.3em;
+}
+h2 {
+  font-size: 1.2em;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.txt-white {
+  color: white;
+}
+.txt-blue {
+  color: #62c6f8;
+}

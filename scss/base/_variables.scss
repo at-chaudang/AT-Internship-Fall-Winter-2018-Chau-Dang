@@ -67,22 +67,19 @@ $breakpoints: (
 );
 
 // === Color ===
-$primary-color: #62c6f8;
-$header-bg-color: #fff;
-$footer-bg-color: #62c6f8;
-$border-nav-color: #e9e9e9;
-$category-bg-color: #d9e4e9;
-$footer-text-color: #fff;
-$btn-submit-color: #4bbc56;
-$btn-more-color: #62c6f8;
-$black-color: #000;
-$white-color: #fff;
-$footer-hr-color: #fff;
-$grey-color: #808080;
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #808080;
+$color-primary: #62c6f8;
+$color-header-bg: $color-white;
+$color-footer-bg: $color-primary;
+$color-footer-hr: $color-white;
+$color-border-nav: #e9e9e9;
+$color-category-bg: #d9e4e9;
+$color-footer-text: $color-white;
+$color-btn-submit: #4bbc56;
+$color-btn-more: $color-primary;
 
 // === Symbol ===
 $space: '\00a0';
 $big-dot: '\2022';
-
-// === Font ===
-$font-family: Arial, sans-serif;

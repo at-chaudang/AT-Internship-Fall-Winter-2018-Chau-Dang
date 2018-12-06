@@ -1,0 +1,18 @@
+// === Section breadcrumb ===
+.section-breadcrumb {
+  background-image: url('../images/banner.png');
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  padding: (30 * $xxs) 0 (30 * $xxs) (7 * $xxs);
+  font-size: 6 * $xxs;
+}
+
+.breadcrumb li+li:before {
+  padding: 0 $s 0 0;
+  color: black;
+  content: "/\00a0\00a0\00a0";
+}

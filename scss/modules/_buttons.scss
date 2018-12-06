@@ -1,0 +1,18 @@
+#btn-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+#btn-send {
+  text-align: center;
+}
+
+.btn-send {
+  padding: 10px;
+  text-transform: uppercase;
+  width: 50%;
+  background-color: #4BBC56;
+}

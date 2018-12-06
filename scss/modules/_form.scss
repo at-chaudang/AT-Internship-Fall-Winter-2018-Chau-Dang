@@ -1,0 +1,28 @@
+// === Form sidebar ===
+.sidebar-left-form {
+  background-color: $category-bg-color;
+  padding: $m;
+}
+
+.sb-form-title {
+  &:after {
+    margin: $m 0 0;
+    display: block;
+    content: '';
+    width: 30%;
+    border: 1px solid $primary-color;
+  }
+}
+
+.form-book-schedule {
+  padding-top: 4 * $xxs;
+}
+
+.input-control {
+  padding: (5 * $xxs) $m 0 0;
+}
+
+.input-control-item {
+  width: 100%;
+  padding: 2.5 * $xxs;
+}

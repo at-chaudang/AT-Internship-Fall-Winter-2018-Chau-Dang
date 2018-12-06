@@ -1,0 +1,32 @@
+/* Sidebar */
+.sidebar-left {
+  width: 25%;
+  @extend %pull-left;
+}
+
+.menu-item {
+  padding-bottom: $l;
+}
+
+.dropdown {
+  background-color: $category-bg-color;
+  padding: $m;
+}
+
+.dropdown-content {
+  padding: $m 0 $l;
+}
+
+.menu-item-title {
+  @extend %pull-left;
+}
+
+.minus {
+  @extend %pull-right;
+  background-color: $category-bg-color;
+  border: 0;
+}
+
+.category-item {
+  padding: ($xxs * 5) ($xxs * 2.5);
+}

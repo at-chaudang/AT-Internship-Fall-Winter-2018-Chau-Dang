@@ -3,13 +3,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: $font-family;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: $black-color;
 }
 
 button {

@@ -4,12 +4,12 @@
   margin: 0 auto;
 }
 
-.txt-footer {
-  color: $footer-text-color;
+.pull-left {
+  @extend %pull-left;
 }
 
-.txt-primary {
-  color: $primary-color;
+.pull-right {
+  @extend %pull-right;
 }
 
 .clearfix {

@@ -10,15 +10,11 @@ export class HoverItemDirective {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.hoverItem(this.renderer, this.el);
+    this.renderer.addClass(this.el.nativeElement, 'shadow-yellow');
   }
 
   @HostListener('mouseleave') onMouseLeave() {
-    this.renderer.removeClass(this.el.nativeElement, 'hoverChangeYellow');
-  }
-
-  private hoverItem(renderer: Renderer2, hostElement: ElementRef) {
-    this.renderer.addClass(this.el.nativeElement, 'hoverChangeYellow');
+    this.renderer.removeClass(this.el.nativeElement, 'shadow-yellow');
   }
 
 }

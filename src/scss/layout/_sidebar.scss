@@ -25,6 +25,9 @@
         color: $color-grey;
         padding-right: $s;
       }
+      &:hover {
+        background: $color-category-bg;
+      }
     }
   }
 }

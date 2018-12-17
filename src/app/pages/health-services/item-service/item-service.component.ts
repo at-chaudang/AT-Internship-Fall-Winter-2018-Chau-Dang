@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { InteractionService } from './../../../core/services/interaction.service'
+
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-item-service',
@@ -8,10 +11,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ItemServiceComponent implements OnInit {
 
   @Input() item: any;
+  open = true;
+  sub: Subscription;
 
-  constructor() { }
+  constructor(private inter: InteractionService) { }
 
   ngOnInit() {
+    this.sub = this.inter.getSource$.subscribe((data: any) => {
+      this.open = data;
+    });
   }
-
+  
 }

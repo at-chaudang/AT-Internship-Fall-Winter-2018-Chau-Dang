@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -11,6 +13,7 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component';
 import { HoverItemDirective } from './shared/directives/hover-item.directive';
 import { LimitTextPipe } from './shared/pipes/limit-text.pipe';
+import { ItemServiceOtherComponent } from './pages/health-services/item-service-other/item-service-other.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,11 @@ import { LimitTextPipe } from './shared/pipes/limit-text.pipe';
     BreadcrumbComponent,
     HoverItemDirective,
     LimitTextPipe,
+    ItemServiceOtherComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

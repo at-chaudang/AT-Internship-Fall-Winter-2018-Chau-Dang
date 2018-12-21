@@ -14,6 +14,7 @@ export class SidebarComponent implements OnInit {
   phoneNumber = "";
   time = "";
   data: BookShedule[] = [];
+  id = 0;
 
   constructor() { }
 
@@ -21,11 +22,12 @@ export class SidebarComponent implements OnInit {
   }
 
   onSubmit(bookSchedule: NgForm) {
+    
     this.fullName = bookSchedule.controls.fullName.value;
     this.addess = bookSchedule.controls.addess.value;
     this.phoneNumber = bookSchedule.controls.phoneNumber.value;
     this.time = bookSchedule.controls.time.value;
-    this.data.push(new BookShedule(this.fullName,this.addess,this.phoneNumber,this.time));
+    this.data.push(new BookShedule(this.id++, this.fullName,this.addess,this.phoneNumber,this.time));
     console.log("SB: " + JSON.stringify(this.data));
   } 
 }

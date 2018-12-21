@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -14,6 +15,10 @@ import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component';
 import { HoverItemDirective } from './shared/directives/hover-item.directive';
 import { LimitTextPipe } from './shared/pipes/limit-text.pipe';
 import { ItemServiceOtherComponent } from './pages/health-services/item-service-other/item-service-other.component';
+import { FormsComponent } from './pages/forms/forms.component';
+import { TemplateDrivenComponent } from './pages/forms/template-driven/template-driven.component';
+import { ReactiveFormComponent } from './pages/forms/reactive-form/reactive-form.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,10 +33,16 @@ import { ItemServiceOtherComponent } from './pages/health-services/item-service-
     HoverItemDirective,
     LimitTextPipe,
     ItemServiceOtherComponent,
+    FormsComponent,
+    TemplateDrivenComponent,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([]),
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

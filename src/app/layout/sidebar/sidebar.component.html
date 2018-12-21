@@ -44,18 +44,18 @@
   <section class="sidebar-left-form">
     <h2 class="sb-form-title">Book Schedule</h2>
     <i class="blue-line"></i>
-    <form class="form-book-schedule" action="">
+    <form class="form-book-schedule" (ngSubmit)="onSubmit(bookSchedule)" #bookSchedule="ngForm">
       <div class="input-control">
-        <input class="input-control-item" type="text" placeholder="Full Name">
+        <input name="fullName" ngModel class="input-control-item" type="text" placeholder="Full Name">
       </div>
       <div class="input-control">
-        <input class="input-control-item" type="text" placeholder="Addess">
+        <input name="addess" ngModel class="input-control-item" type="text" placeholder="Addess">
       </div>
       <div class="input-control">
-        <input class="input-control-item" type="text" placeholder="Phone Number">
+        <input name="phoneNumber" ngModel class="input-control-item" type="text" placeholder="Phone Number">
       </div>
       <div class="input-control">
-        <input class="input-control-item" type="date" placeholder="Time">
+        <input name="time" ngModel class="input-control-item" type="date" placeholder="Time">
       </div>
       <div class="input-control txt-center">
         <input class="btn-send" type="submit" value="Send">

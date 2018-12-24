@@ -22,7 +22,6 @@ export class SidebarComponent implements OnInit {
   }
 
   onSubmit(bookSchedule: NgForm) {
-    
     this.fullName = bookSchedule.controls.fullName.value;
     this.addess = bookSchedule.controls.addess.value;
     this.phoneNumber = bookSchedule.controls.phoneNumber.value;

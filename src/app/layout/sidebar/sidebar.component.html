@@ -46,10 +46,10 @@
     <i class="blue-line"></i>
     <form class="form-book-schedule" (ngSubmit)="onSubmit(bookSchedule)" #bookSchedule="ngForm">
       <div class="input-control">
-        <input name="fullName" ngModel class="input-control-item" type="text" placeholder="Full Name">
+        <input name="fullName" [(ngModel)]="fullName" class="input-control-item" type="text" placeholder="Full Name">
       </div>
       <div class="input-control">
-        <input name="addess" ngModel class="input-control-item" type="text" placeholder="Addess">
+        <input value="{{ fullName }}" name="addess" ngModel class="input-control-item" type="text" placeholder="Addess">
       </div>
       <div class="input-control">
         <input name="phoneNumber" ngModel class="input-control-item" type="text" placeholder="Phone Number">

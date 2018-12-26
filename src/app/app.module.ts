@@ -23,6 +23,7 @@ import { UserComponent } from './pages/user/user.component';
 import { DashboardComponent } from './pages/user/dashboard/dashboard.component';
 import { ProfileComponent } from './pages/user/profile/profile.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PathImagesPipe } from './shared/pipes/path-images.pipe';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { LoginComponent } from './pages/login/login.component';
     UserComponent,
     // DashboardComponent,
     // ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    PathImagesPipe
   ],
   imports: [
     BrowserModule,

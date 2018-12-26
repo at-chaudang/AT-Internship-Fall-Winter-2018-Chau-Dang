@@ -3,7 +3,7 @@
     <div class="container">
       <div class="top-logo pull-left clearfix">
         <div class="img-logo">
-          <a href="#"><img src="../../../assets/images/logo.png" alt="img-logo"></a>
+          <a href="#"><img [src]="'assets/images/logo.png' | pathImages" alt="img-logo"></a>
         </div>
         <div class="h-top-info">
           <b class="top-info-title">Specialized Clinic</b>
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="header-top-right pull-right clearfix">
-        <img src="../../../assets/images/ic-tele.png" alt="icon-phone" class="ic-tele">
+        <img [src]="'assets/images/ic-tele.png' | pathImages" alt="icon-phone" class="ic-tele">
         <p class="t-r-info">
           <i>Question for the doctor? </i>
           <span class="phone-number txt-primary">05113941 977</span>
@@ -32,9 +32,9 @@
         </ul>
       </nav>
       <ul class="header-social-list pull-right">
-        <li class="header-social-item"><a href="" class="social-item-link"><img src="../../../assets/images/icon-fb.png" alt="icon facebook"></a></li>
-        <li class="header-social-item"><a href="" class="social-item-link"><img src="../../../assets/images/icon-gmail.png" alt="icon gmail"></a></li>
-        <li class="header-social-item"><a href="" class="social-item-link"><img src="../../../assets/images/icon-youtube.png" alt="icon youtube"></a></li>
+        <li class="header-social-item"><a href="" class="social-item-link"><img [src]="'assets/images/icon-fb.png' | pathImages" alt="icon facebook"></a></li>
+        <li class="header-social-item"><a href="" class="social-item-link"><img [src]="'assets/images/icon-gmail.png' | pathImages" alt="icon gmail"></a></li>
+        <li class="header-social-item"><a href="" class="social-item-link"><img [src]="'assets/images/icon-youtube.png' | pathImages" alt="icon youtube"></a></li>
       </ul>
     </div>
   </div>

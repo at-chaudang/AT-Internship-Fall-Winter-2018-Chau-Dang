@@ -6,6 +6,7 @@ import { catchError, retry } from 'rxjs/operators';
 import { LoggerService } from './logger.service';
 
 export const DOMAIN_API = environment.api;
+export const PATH_IMAGES = environment.path;
 export const ENDPOINT = {
   users: 'users',
   register: 'register'

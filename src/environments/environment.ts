@@ -1,4 +1,5 @@
 export const environment = {
     production: false,
-    api: "http://localhost:4200/assets/"
+    api: "http://localhost:4200/assets/",
+    path: "../../../"
   };

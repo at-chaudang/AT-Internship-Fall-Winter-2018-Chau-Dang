@@ -13,7 +13,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(JSON.stringify(this.route.snapshot.data[0]));
+    // console.log(JSON.stringify(this.route.snapshot.data[0]));
   }
   
 }

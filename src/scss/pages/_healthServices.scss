@@ -1,0 +1,38 @@
+// === page-main ===
+.page-main {
+  padding-bottom: $l;
+}
+
+.homepage {
+  .main-content {
+    padding: $xl 0 0;
+    .main-right {
+      @extend %pull-right;
+      width: 75%;
+    }
+    .service-item {
+      @extend %pull-left;
+      width: calc(100% / 3 - #{$m});
+      padding-bottom: $m;
+      position: relative;
+      box-shadow: 1px 1px 1px $color-grey;
+      margin-left: $m;
+      margin-bottom: $m;
+      &-title {
+        padding-bottom: 4%;
+      }
+      &-container {
+        padding: 4%;
+        padding-bottom: 8%;
+      }
+      &-content {
+        font-size: 6 * $xxs;
+        line-height: 130%;
+      }
+      .service-image {
+        width: 100%;
+        height: 90 * $xxs;
+      }
+    }
+  }
+}

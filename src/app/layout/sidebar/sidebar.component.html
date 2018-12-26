@@ -1,0 +1,65 @@
+<aside class="sidebar-left">
+  <section class="sidebar-left-menu">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <div class="dropdown-title clearfix">
+          <h3 class="menu-item-title">Adults</h3>
+          <button class="minus"><i class="fa fa-minus"></i></button>
+        </div>
+        <div class="dropdown-content">
+          <ul class="category-list">
+            <li class="category-item"><a href="" class="menu-link">Neck-shouler-hand pain</a></li>
+            <li class="category-item"><a href="" class="menu-link">Spinal pain</a></li>
+            <li class="category-item"><a href="" class="menu-link">Disc herniation</a></li>
+            <li class="category-item"><a href="" class="menu-link">Knee joint, hip joint</a></li>
+            <li class="category-item"><a href="" class="menu-link">Footsore,</a></li>
+            <li class="category-item"><a href="" class="menu-link">Diseases of the muscles</a></li>
+            <li class="category-item"><a href="" class="menu-link">Perlpheral neuropathy</a></li>
+            <li class="category-item"><a href="" class="menu-link">Sequelae of stroke</a></li>
+            <li class="category-item"><a href="" class="menu-link">Traumatic sequelae</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="dropdown-title clearfix">
+          <h3 class="menu-item-title">Children</h3>
+          <button class="minus"><i class="fa fa-minus"></i></button>
+        </div>
+        <div class="dropdown-content">
+          <ul class="category-list">
+            <li class="category-item"><a href="" class="menu-link">Neck-shouler-hand pain</a></li>
+            <li class="category-item"><a href="" class="menu-link">Spinal pain</a></li>
+            <li class="category-item"><a href="" class="menu-link">Disc herniation</a></li>
+            <li class="category-item"><a href="" class="menu-link">Knee joint, hip joint</a></li>
+            <li class="category-item"><a href="" class="menu-link">Footsore,</a></li>
+            <li class="category-item"><a href="" class="menu-link">Diseases of the muscles</a></li>
+            <li class="category-item"><a href="" class="menu-link">Perlpheral neuropathy</a></li>
+            <li class="category-item"><a href="" class="menu-link">Sequelae of stroke</a></li>
+            <li class="category-item"><a href="" class="menu-link">Traumatic sequelae</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="sidebar-left-form">
+    <h2 class="sb-form-title">Book Schedule</h2>
+    <i class="blue-line"></i>
+    <form class="form-book-schedule" (ngSubmit)="onSubmit(bookSchedule)" #bookSchedule="ngForm">
+      <div class="input-control">
+        <input name="fullName" [(ngModel)]="fullName" class="input-control-item" type="text" placeholder="Full Name">
+      </div>
+      <div class="input-control">
+        <input value="{{ fullName }}" name="addess" ngModel class="input-control-item" type="text" placeholder="Addess">
+      </div>
+      <div class="input-control">
+        <input name="phoneNumber" ngModel class="input-control-item" type="text" placeholder="Phone Number">
+      </div>
+      <div class="input-control">
+        <input name="time" ngModel class="input-control-item" type="date" placeholder="Time">
+      </div>
+      <div class="input-control txt-center">
+        <input class="btn-send" type="submit" value="Send">
+      </div>
+    </form>
+  </section>
+</aside>

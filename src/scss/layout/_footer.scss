@@ -1,0 +1,42 @@
+// === Footer === 
+.page-footer {
+  background-color: $color-footer-bg;
+  padding: $p-m-top;
+  .footer-info {
+    padding: 3 * $m;
+    .info-item {
+      @extend %pull-left;
+      width: calc(100% / 3);
+    }
+    .sub-info-item {
+      padding: (0.4 * $m) 0;
+      cursor: pointer;
+      &:before {
+        content: $big-dot;
+        color: $color-white;
+        padding-right: 5px;
+      }
+    }
+    .footer-link {
+      color: $color-white;
+    }
+    .info-item-title {
+      padding-bottom: $m;
+    }
+  }
+  .footer-content {
+    padding: (10 * $xxs) 0;
+  }
+  .footer-bottom {
+    padding: 0 0 ($xxs * 10);
+    border-top: 1px solid $color-footer-hr;
+    .footer-address {
+      padding: (1.5 * $m) 0;
+      line-height: 120%;
+    }
+  }
+}
+
+.info-link, .footer-copyright, .footer-author {
+  text-transform: uppercase;
+}

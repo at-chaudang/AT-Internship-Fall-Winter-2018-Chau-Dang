@@ -1,0 +1,14 @@
+.btn-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.btn-send {
+  padding: 10px;
+  text-transform: uppercase;
+  width: 50%;
+  background-color: $color-btn-submit;
+}

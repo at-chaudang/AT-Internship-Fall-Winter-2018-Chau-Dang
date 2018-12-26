@@ -1,0 +1,8 @@
+<section class="main-right">
+  <ul class="service-list clearfix">
+    <li class="service-item" *ngFor="let item of services" appHoverItem>
+      <app-item-service [item]='item'></app-item-service>
+    </li>
+  </ul>
+</section>
+<app-item-service-other></app-item-service-other>

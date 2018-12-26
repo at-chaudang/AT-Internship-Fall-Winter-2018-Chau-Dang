@@ -1,0 +1,15 @@
+.txt-white {
+  color: $color-white;
+}
+
+.txt-primary {
+  color: $color-primary;
+}
+
+.txt-center {
+  @extend %txt-center;
+}
+
+.shadow-yellow {
+  box-shadow: 0 0 5px 2px yellow !important;
+}

@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { UserComponent } from './pages/user/user.component';
 import { DashboardComponent } from './pages/user/dashboard/dashboard.component';
 import { ProfileComponent } from './pages/user/profile/profile.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -40,16 +41,17 @@ import { ProfileComponent } from './pages/user/profile/profile.component';
     TemplateDrivenComponent,
     ReactiveFormComponent,
     UserComponent,
-    DashboardComponent,
-    ProfileComponent,
+    // DashboardComponent,
+    // ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([]),
-    AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

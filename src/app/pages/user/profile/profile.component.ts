@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private route: ActivatedRoute) {
   }
 
+  ngOnInit() {
+    console.log(JSON.stringify(this.route.snapshot.data[0]));
+  }
+  
 }

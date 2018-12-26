@@ -6,14 +6,16 @@ import { TemplateDrivenComponent } from './pages/forms/template-driven/template-
 import { ReactiveFormComponent } from './pages/forms/reactive-form/reactive-form.component';
 import { UserComponent } from './pages/user/user.component';
 import { DashboardComponent } from './pages/user/dashboard/dashboard.component';
-import { Profile } from 'selenium-webdriver/firefox';
 import { ProfileComponent } from './pages/user/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { UserGuard } from './pages/user/user.guard';
+import { ProfileResolver } from './pages/user/profile/profile.resolve';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'forms',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -32,17 +34,26 @@ const routes: Routes = [
   },
   {
     path: 'user',
+    loadChildren: './pages/user/user.module#UserModule',
     component: UserComponent,
-    children: [
-      {
-        path: 'dashboard',
-        component: DashboardComponent
-      },
-      {
-        path: 'profile',
-        component: ProfileComponent
-      }
-    ]
+    canActivate: [UserGuard],
+    canActivateChild: [UserGuard],
+    canDeactivate: [UserGuard],
+    // children: [
+    //   {
+    //     path: 'dashboard',
+    //     component: DashboardComponent
+    //   },
+    //   {
+    //     path: 'profile',
+    //     component: ProfileComponent,
+    //     resolve: [ProfileResolver]
+    //   }
+    // ]
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: '**',
